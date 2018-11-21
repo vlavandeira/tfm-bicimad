@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_76d6c3f0ec4f4d64aff8b4186b9416bb {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_76d6c3f0ec4f4d64aff8b4186b9416bb" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_76d6c3f0ec4f4d64aff8b4186b9416bb = L.map(
+        'map_76d6c3f0ec4f4d64aff8b4186b9416bb', {
+        center: [40.4155068, -3.6840015],
+        zoom: 15,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_8f1640b2d12c438a9b25bfc7c5851c51 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+    
+        
+        var geo_json_14e1dae3bf5147019887f6a19959201b = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.688398, 40.419752], [-3.6879536, 40.419539], [-3.6875135, 40.4194007997], [-3.6877754997, 40.4194294997], [-3.688398, 40.419752]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_14e1dae3bf5147019887f6a19959201b.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_14e1dae3bf5147019887f6a19959201b.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_dcf6b18ce3854149a086b87e20739861 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.680008, 40.421501], [-3.6796503, 40.4204464997], [-3.6787095997, 40.417417], [-3.6788967997, 40.4169369997], [-3.6788216, 40.4169215], [-3.6789773, 40.418551], [-3.6794962997000003, 40.4218606], [-3.6775587997, 40.4217263], [-3.6752045, 40.4213983]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_dcf6b18ce3854149a086b87e20739861.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_dcf6b18ce3854149a086b87e20739861.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_fd78f2bf3cfb4bb99f998b5750e49a4d = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6726019, 40.4032501], [-3.6735064997, 40.4034594997], [-3.6763607997000003, 40.4049028], [-3.6793862997, 40.4064279997], [-3.6775744997, 40.4095015997], [-3.6770554997, 40.4131952997], [-3.6777913, 40.4152115997], [-3.6788159997000003, 40.4180155997], [-3.6798422996999998, 40.419823], [-3.6797116, 40.4198728], [-3.6796788, 40.4198858], [-3.6796527997, 40.4197997997], [-3.6789803, 40.4194061], [-3.6776648, 40.4155350997], [-3.6773330997, 40.4145907997], [-3.6765789997000002, 40.4123774997], [-3.6772406, 40.4095142997], [-3.6786189997000003, 40.4073100997], [-3.6791385, 40.4068015], [-3.6803874, 40.4051451]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_fd78f2bf3cfb4bb99f998b5750e49a4d.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_fd78f2bf3cfb4bb99f998b5750e49a4d.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_95f7196044e7497092f72ed34e027ac6 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.688398, 40.419752], [-3.6882442997, 40.4189111], [-3.6889650997, 40.4169003], [-3.6892595999999998, 40.4166694997], [-3.6890857997, 40.4177958], [-3.6889215, 40.4193789997], [-3.6892323, 40.4195399997], [-3.6894174997, 40.419995], [-3.6895534999999997, 40.4200443], [-3.6905098, 40.4197986], [-3.692222, 40.4197844997], [-3.6928716, 40.4198985], [-3.6954615, 40.4192342]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_95f7196044e7497092f72ed34e027ac6.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_95f7196044e7497092f72ed34e027ac6.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_5c6cc74b4105497a95c838721e478980 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.680008, 40.421501], [-3.6797165997, 40.4212684997], [-3.6800129999999998, 40.4210824997], [-3.6803143, 40.4208325997], [-3.6798866, 40.4209631], [-3.6798734997, 40.4210212997], [-3.6798145, 40.4210844997], [-3.6797262997, 40.4213944997], [-3.6800432997, 40.4208901], [-3.6800191, 40.4210217997], [-3.6798620997, 40.4210520997], [-3.6799685, 40.4213994997], [-3.6799127997000003, 40.4210789997], [-3.6802555999999997, 40.4214058], [-3.6843278, 40.4209444997], [-3.6888835, 40.4197510997], [-3.6930472997, 40.4190839997], [-3.6937902997, 40.4191845], [-3.6999963, 40.4197198], [-3.7021142997, 40.4199400997], [-3.7046115996999998, 40.4201837997], [-3.7065142997000002, 40.4202562997], [-3.7082945997, 40.4199595997], [-3.7080733, 40.4197429]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_5c6cc74b4105497a95c838721e478980.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_5c6cc74b4105497a95c838721e478980.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_95a64986d1b54befa42ef1ada2397b60 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6904525, 40.4165605], [-3.6893280997, 40.4166835997], [-3.6887540999999997, 40.4153294997], [-3.6886445, 40.4159672997], [-3.688428, 40.4186169997], [-3.6881592999999997, 40.4183491], [-3.6886209997, 40.415998], [-3.6885355997, 40.4154949997], [-3.6886112997, 40.415469], [-3.6886524997, 40.4158716], [-3.6886223, 40.417273], [-3.6881095999999998, 40.4186221], [-3.6883897997, 40.4183676], [-3.6883650997, 40.4189616], [-3.6883542997000003, 40.4192389997], [-3.6878471, 40.4194967997], [-3.687927, 40.4195497997], [-3.6884103, 40.4211914997], [-3.6883542997000003, 40.4228181], [-3.6881897997, 40.4243992997], [-3.6881281, 40.4252618], [-3.6890022997000003, 40.4250016], [-3.6898662997000002, 40.4263035], [-3.6891417997, 40.4290286], [-3.6888487999999997, 40.4306675997], [-3.6884362997, 40.4311137997], [-3.6878734997000002, 40.4325249997], [-3.6884467997, 40.4329049997], [-3.6889238, 40.4341705], [-3.6900618, 40.4366314997], [-3.6910707997000003, 40.4381713], [-3.6923119997000002, 40.4415575], [-3.6919339997, 40.441921], [-3.6919705, 40.4430618], [-3.6918742997000003, 40.443787], [-3.6918682997000003, 40.445278], [-3.6917105997, 40.4451999997], [-3.691834, 40.4454412997], [-3.6910249996999998, 40.4458602997], [-3.6891096, 40.444997], [-3.686176, 40.4448587997], [-3.6857215997, 40.4457128], [-3.6849033, 40.4450568], [-3.6848969997000003, 40.4451058], [-3.6831310999999998, 40.4460752997], [-3.6797296, 40.4483269]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_95a64986d1b54befa42ef1ada2397b60.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_95a64986d1b54befa42ef1ada2397b60.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_5bbc2e05f703488e906c6c3328378606 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.680008, 40.421501], [-3.6803453, 40.4210370997], [-3.680008, 40.421501]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_5bbc2e05f703488e906c6c3328378606.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_5bbc2e05f703488e906c6c3328378606.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_7c40070d7ef54e599774e286489f7891 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.697895, 40.4222862], [-3.6979785, 40.4220370997], [-3.6992284997000002, 40.4207517997], [-3.6990205997, 40.4175765997], [-3.6991857997, 40.4165345997], [-3.7007175997, 40.4161077997], [-3.7035439997, 40.4144417997], [-3.7037293, 40.4143534997], [-3.7039688, 40.4126414997], [-3.7075545, 40.413176], [-3.7087990997, 40.4108706], [-3.7108156, 40.408239], [-3.7109291, 40.4066827997], [-3.7109014997000003, 40.4063195], [-3.7091170997000003, 40.4057613], [-3.7090781, 40.4056284997], [-3.7090282997, 40.4056008], [-3.7088665, 40.405371099999996], [-3.7062613, 40.4042610997], [-3.7020718, 40.4052136], [-3.698484, 40.4061684997], [-3.6914463, 40.4087625], [-3.6889405997, 40.4107849997], [-3.6889517997, 40.4127914997], [-3.6887251, 40.4135857997], [-3.6886865, 40.4153390997], [-3.6883959997, 40.4182030997], [-3.6865367997, 40.4203071], [-3.6839559997, 40.4208010997], [-3.681883, 40.4210242997], [-3.6814657996999998, 40.4204865997], [-3.6806060997000003, 40.4198943], [-3.6807821, 40.4196377997], [-3.6802386, 40.4208993], [-3.6799735997000003, 40.4214072997], [-3.6783460999999997, 40.4218797997], [-3.6757850999999997, 40.4227642997], [-3.6746191, 40.4242334997], [-3.6722874997, 40.4248276], [-3.6712131, 40.4259056], [-3.6723447997000003, 40.42643], [-3.6728665997, 40.4262111], [-3.672358, 40.4263161], [-3.6729555, 40.4259028], [-3.6724413, 40.4261887997], [-3.6717659997, 40.4294518], [-3.6754251, 40.4298320997], [-3.6794202997000003, 40.4299719997], [-3.6816402, 40.4300481]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_7c40070d7ef54e599774e286489f7891.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_7c40070d7ef54e599774e286489f7891.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_ce333199c64543cbb07d52e75dbdcaf3 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6691523, 40.4231526], [-3.6688808, 40.4229515997], [-3.6690504997, 40.4220937997], [-3.6692532997000002, 40.4214490997], [-3.6694168, 40.4212926], [-3.6716550999999997, 40.4216090997], [-3.6745491, 40.4216612997], [-3.676609, 40.4218193], [-3.678275, 40.4218017997], [-3.680002, 40.4210718], [-3.6810082997, 40.4212114997], [-3.6832685, 40.4208128], [-3.6856072997, 40.4203534997], [-3.6874200999999998, 40.4199777997], [-3.6882614997000003, 40.4190554997], [-3.6885145, 40.4173198], [-3.6885352997, 40.4158637997], [-3.6886523, 40.4142434997], [-3.6886016, 40.4123257997], [-3.6884933, 40.4108544997], [-3.6884055, 40.4098012997], [-3.6886955, 40.409894], [-3.688822, 40.409808]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_ce333199c64543cbb07d52e75dbdcaf3.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_ce333199c64543cbb07d52e75dbdcaf3.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_a7878f8673b84026a63bec7bfc31b218 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6779232, 40.4153053], [-3.6779795, 40.4155009997], [-3.6782971, 40.4152759997], [-3.6778624997, 40.4159489997], [-3.6792023, 40.4197245], [-3.6804983, 40.4230286], [-3.6814817997000002, 40.4238575997], [-3.6851647997, 40.4240479997], [-3.6882358, 40.4240910997], [-3.6908000999999997, 40.4253679997], [-3.6956039997, 40.4278051], [-3.7009637997000002, 40.428808599999996], [-3.702519, 40.428257], [-3.7061931, 40.4284246]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_a7878f8673b84026a63bec7bfc31b218.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_a7878f8673b84026a63bec7bfc31b218.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_d47c6038cda14ba28beebea07ee20ba5 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.688822, 40.409808], [-3.6888005, 40.4100804997], [-3.6879867997, 40.4098354997], [-3.688177, 40.4097695], [-3.6896043, 40.4095901], [-3.6912747997, 40.4094870997], [-3.6921653, 40.4083431], [-3.6987665, 40.4017926]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_d47c6038cda14ba28beebea07ee20ba5.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_d47c6038cda14ba28beebea07ee20ba5.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_9a9fad4d5e214f26971f7073aaedaf37 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6691523, 40.4231526], [-3.6714438, 40.4231115997], [-3.6726858, 40.4220106], [-3.6738317997000003, 40.4213333], [-3.6769256, 40.4216114997], [-3.6792126, 40.4214831], [-3.6802413, 40.4209249997], [-3.6800655, 40.4212125997], [-3.6813636, 40.4213583], [-3.684108, 40.4210289997], [-3.6869564997, 40.4203894997], [-3.6898816, 40.4200505], [-3.6926239997, 40.4192766], [-3.6933036, 40.4185668], [-3.6931465, 40.4174155997], [-3.693737, 40.4152970997], [-3.6951152997000003, 40.4154391], [-3.6992397997, 40.4169979997], [-3.7006513, 40.4168395], [-3.7025975, 40.4170165997], [-3.7027013, 40.4169450997], [-3.7024255, 40.4168961]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_9a9fad4d5e214f26971f7073aaedaf37.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_9a9fad4d5e214f26971f7073aaedaf37.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_1646ba609e904392a2a9858334033dbf = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6738865, 40.4159569], [-3.6774827997, 40.4154590997], [-3.6785021, 40.4154235], [-3.678319, 40.4155812997], [-3.6755350997000003, 40.4156248], [-3.6754343, 40.415914], [-3.6738865, 40.4159569]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_1646ba609e904392a2a9858334033dbf.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_1646ba609e904392a2a9858334033dbf.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_1ce107e1ab1d4667879f3a63faaa3ed0 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6779232, 40.4153053], [-3.677665, 40.4151117997], [-3.6777742997000002, 40.4153693], [-3.6779292999999997, 40.4160261], [-3.6780713, 40.4166555997], [-3.6783326, 40.4172770997], [-3.6785734999999997, 40.4179080997], [-3.6792541, 40.4184752997], [-3.6796017997, 40.4186813], [-3.6794074997, 40.4187086], [-3.6781955997, 40.4170268], [-3.6770177996999998, 40.4133495997], [-3.6767815997, 40.4089924997], [-3.6750121, 40.4076726]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_1ce107e1ab1d4667879f3a63faaa3ed0.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_1ce107e1ab1d4667879f3a63faaa3ed0.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_4ff1c1344a4942f79e16be43fc708a02 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6706024, 40.4273005], [-3.6729227997000002, 40.4263297997], [-3.6753656, 40.425027299999996], [-3.6780048, 40.424143], [-3.6808721, 40.4224461], [-3.6852825, 40.4207249997], [-3.6882535997, 40.4194855], [-3.6887986, 40.4180451], [-3.6892946, 40.4150380997], [-3.6885624999999997, 40.4122095997], [-3.6884163, 40.4072742997], [-3.6855164997000003, 40.4067320997], [-3.6799406, 40.407459], [-3.6786317996999998, 40.4080226], [-3.6774458, 40.4102305997], [-3.6764669999999997, 40.4117631], [-3.6770265, 40.4133004997], [-3.6779995999999997, 40.416116], [-3.6790875, 40.4189451], [-3.6791225, 40.4194966], [-3.679758, 40.4209724997], [-3.6805235, 40.4208770997], [-3.6800131, 40.4208706], [-3.6800867999999998, 40.4208874997], [-3.6798981, 40.4211158], [-3.6798308, 40.4211408], [-3.6797645997, 40.421083], [-3.6797604997, 40.4212467997], [-3.6788465, 40.4187541], [-3.678523, 40.4176511], [-3.6772024997, 40.4146052997], [-3.6768561, 40.4126042997], [-3.6771657997, 40.4136299997], [-3.6777549997, 40.4151774997], [-3.6786053, 40.4176144997], [-3.6796850997, 40.420762], [-3.6801973, 40.4248225997], [-3.6799909997, 40.4274119997], [-3.6752024, 40.4272582]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_4ff1c1344a4942f79e16be43fc708a02.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_4ff1c1344a4942f79e16be43fc708a02.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_ed992b1533904df9ad08a18559f09816 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6954403, 40.4278682], [-3.6937101, 40.4266307997], [-3.6909383, 40.4255309997], [-3.6902165, 40.4248802997], [-3.6884616, 40.4225246], [-3.6875363, 40.4190046], [-3.6891829997, 40.4197185], [-3.6925255999999997, 40.4190024997], [-3.6933777997, 40.4157531], [-3.6956178, 40.4132798]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_ed992b1533904df9ad08a18559f09816.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_ed992b1533904df9ad08a18559f09816.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_05f695bcd8ef429c9d010123cd09db33 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.7133412, 40.4306458], [-3.7132977997000003, 40.4305155997], [-3.7106477997000002, 40.4300830997], [-3.7071133, 40.4298697997], [-3.7014140997, 40.4293284997], [-3.6997976, 40.430646], [-3.6986403, 40.4307404997], [-3.6964912997, 40.4296344997], [-3.6962628, 40.4272309997], [-3.6971484997, 40.4257169997], [-3.6956490996999998, 40.4246699997], [-3.6950466, 40.4243875], [-3.6912379997, 40.4232834997], [-3.6896139999999997, 40.423085], [-3.6860916, 40.4223988], [-3.6843465, 40.4219904997], [-3.6860495, 40.4203444997], [-3.6859448, 40.4202209997], [-3.6856429996999998, 40.4199132997], [-3.6864407999999997, 40.4200422997], [-3.6875745, 40.4197348], [-3.688398, 40.419752]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_05f695bcd8ef429c9d010123cd09db33.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_05f695bcd8ef429c9d010123cd09db33.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_f66d82c9c71f4a1c8c034210d0979153 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6832566, 40.427736], [-3.6838674997, 40.4267960997], [-3.6841265997, 40.4228207997], [-3.6830829997, 40.4214924997], [-3.6820887997, 40.4211045997], [-3.6815797999999997, 40.4207351], [-3.6870548, 40.4226584]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_f66d82c9c71f4a1c8c034210d0979153.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_f66d82c9c71f4a1c8c034210d0979153.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_29b34a97c84945e4a9019f19c31d448b = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.688822, 40.409808], [-3.6888582999999997, 40.409984], [-3.6867256, 40.4101187997], [-3.6883168, 40.4097904997], [-3.6903874997, 40.4094845997], [-3.692705, 40.409657], [-3.6949711, 40.4103922997], [-3.6974919997, 40.4111442997], [-3.6992452997000003, 40.4119583], [-3.7018995, 40.4125268], [-3.7051027999999997, 40.4128588], [-3.7049407, 40.4138846]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_29b34a97c84945e4a9019f19c31d448b.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_29b34a97c84945e4a9019f19c31d448b.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_8dd54264e77947b284c6a13b52e81d88 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6738865, 40.4159569], [-3.6750286, 40.4159600997], [-3.6775827999999997, 40.4169977997], [-3.6787814997, 40.4181524997], [-3.6790332997, 40.418236], [-3.6792962997, 40.4179223], [-3.6794433, 40.4178208], [-3.6794617997, 40.4178540997], [-3.6793089997, 40.4182068], [-3.6787656, 40.4186254997], [-3.6761485997000003, 40.4197976], [-3.6767273, 40.4204502997], [-3.6756790997, 40.421657], [-3.6752045, 40.4213983]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_8dd54264e77947b284c6a13b52e81d88.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_8dd54264e77947b284c6a13b52e81d88.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_0639c4b6ef4e41259261bbd130f438de = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.688822, 40.409808], [-3.6885447997, 40.4116082997], [-3.6887316, 40.4122573], [-3.6887986, 40.4122245], [-3.6883372999999997, 40.4121266], [-3.6889205997000003, 40.4105277997], [-3.6887899997, 40.4121335997], [-3.6889706, 40.4158530997], [-3.6887974999999997, 40.4191125997], [-3.6923181, 40.419395], [-3.6931406, 40.4190545], [-3.6953664997, 40.4105446], [-3.6920552997, 40.4098411], [-3.6888825997, 40.4099204997], [-3.688822, 40.409808]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_0639c4b6ef4e41259261bbd130f438de.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_0639c4b6ef4e41259261bbd130f438de.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_949151b3743c4bad9df999806f7593d1 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6954403, 40.4278682], [-3.6953499997, 40.4276972997], [-3.6972966, 40.4258039997], [-3.6989264996999998, 40.423065], [-3.7002934997, 40.4211241], [-3.6987575, 40.4202798], [-3.6970100997, 40.4189365], [-3.6952734997, 40.4191764997], [-3.6919048, 40.4193903], [-3.6893259997000003, 40.4195759997], [-3.6885316, 40.4194062997], [-3.6883816, 40.4191251], [-3.6880004997, 40.4173793], [-3.6886223, 40.4169545], [-3.6885285999999997, 40.4163940997], [-3.6886527997, 40.4169340997], [-3.6884522996999998, 40.4190886], [-3.6889403, 40.4194049997], [-3.6903876, 40.4197125], [-3.6922682997000003, 40.4197405], [-3.6929395, 40.4199593], [-3.692015, 40.421967], [-3.691621, 40.4235246], [-3.6913467997, 40.4253945997], [-3.6953500999999997, 40.4274565997], [-3.696505, 40.4297035], [-3.6975961, 40.4321915], [-3.6983131, 40.4341442997], [-3.69653, 40.4351454997], [-3.6963815, 40.4372195997], [-3.6962776, 40.4385467997], [-3.695999, 40.4415152997], [-3.6957260997, 40.4444923], [-3.6955397999999997, 40.4482175997], [-3.695286, 40.4480662]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_949151b3743c4bad9df999806f7593d1.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_949151b3743c4bad9df999806f7593d1.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_40fdf797633c406584a403c08536e483 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.7069171, 40.4302937], [-3.7076839997, 40.4302623], [-3.7084131, 40.4300314997], [-3.7052738, 40.4297571], [-3.7021725, 40.4292392997], [-3.6991904997000002, 40.4284831], [-3.6975527997, 40.4281874997], [-3.6953662997, 40.4275560997], [-3.6938044999999997, 40.4265703], [-3.6901489997, 40.4259739997], [-3.6901004996999998, 40.4258239997], [-3.6889489997, 40.4252296], [-3.6880929997000003, 40.4236328], [-3.6885143, 40.4216042997], [-3.6878942997, 40.4200183], [-3.6877434997, 40.4198190997], [-3.6864683, 40.4199699997], [-3.6861275, 40.4203315997], [-3.6840385997, 40.4208289997], [-3.6816709999999997, 40.421162], [-3.6801409997, 40.4212391], [-3.680008, 40.421501]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_40fdf797633c406584a403c08536e483.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_40fdf797633c406584a403c08536e483.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        
+        var geo_json_92cd8b5123ee410da384c42a0a6349b6 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-3.6691523, 40.4231526], [-3.6694091, 40.4231418], [-3.6727365997, 40.4229929997], [-3.6744913, 40.4214837997], [-3.6764160997, 40.4216866], [-3.6796896, 40.4215755], [-3.680137, 40.4211525997], [-3.6801433, 40.421157], [-3.6802750997, 40.4210714997], [-3.6802207997, 40.4209365997], [-3.6795125996999998, 40.4202702997], [-3.679177, 40.419279], [-3.6777460997, 40.4155165], [-3.6765148, 40.411762], [-3.6772599997, 40.4097179997], [-3.6784838, 40.4082805]], "type": "LineString"}, "properties": {"highlight": {}, "style": {"color": "red", "opacity": 0.7, "weight": 2}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_76d6c3f0ec4f4d64aff8b4186b9416bb);
+        geo_json_92cd8b5123ee410da384c42a0a6349b6.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+        geo_json_92cd8b5123ee410da384c42a0a6349b6.bindTooltip(
+            '<div>'
+            + 'Velocidad media dentro del Retiro: 0.00' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
