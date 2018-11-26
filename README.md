@@ -1,6 +1,6 @@
 ## Análisis del servicio BiciMAD en El Retiro
 
-Este proyecto ha sido desarrollado por Víctor Lavandeira Murat como trabajo final de la VI edición del *Máster en Data Science* de [KSchool](https://kschool.com/) en Madrid.
+Este proyecto ha sido desarrollado por Víctor Lavandeira Murat como trabajo final de la VII edición del *Máster en Data Science* de [KSchool](https://kschool.com/) en Madrid.
 
 ![mi-banner](img/readme-banner.png)
 
