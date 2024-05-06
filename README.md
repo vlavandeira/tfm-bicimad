@@ -13,5 +13,3 @@ Los principales objetivos son:
 - Presentar de forma visual algunas de las conclusiones que se han obtenido.
 
 Dado su propósito académico, el trabajo se dispone en cuatro *Jupyter notebooks* que combinan código y explicaciones. También se proporciona una historia de *Tableau* en un fichero dedicado.
-
-Para cualquier información relacionada puede contactar con el autor en vicaliege@gmail.com
